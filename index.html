@@ -6,7 +6,7 @@
 
 		<title>Behavior Driven Development</title>
 
-		<meta name="description" content="Behavior Driven Development to the rescue">
+		<meta name="description" content="Thoughts on BDD">
 		<meta name="author" content="Ramona Suciu">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,6 +51,12 @@
             .text-left-align {text-align:left; !important}
             
             .text-colored {text-align:center; !important; color:#F87431; !important}
+			
+			.dark-blue {color:#0000A0; !important}
+			
+			.spring-green {color:#347C2C; !important}
+			
+			.maroon {color:#802A00; !important}
             
         </style>
 	</head>
@@ -63,7 +69,7 @@
 			<div class="slides">
 
 				<section>
-					<h1>BDD - When and How</h1>
+					<h1>BDD Thoughts</h1>
                     <br />
 					<h3>Behavior Driven Development to the rescue!</h3>
                     
@@ -74,20 +80,33 @@
 				<section>
                     <section data-state="blackout">
                         <h2>What is BDD?</h2>
-                        <p>
-                            <img class="noborder" width="1200" src="images/split_ruby.png">
-                        </p>
+                        <br />
+						<p>
+							<q cite>
+								Specifications that talk about business processes are worth much more over the long term. 
+							</q>
+							<br />
+							<br />
+							<q cite>
+								Business users can participate in documenting business processes and provide much better feedback than they would on acceptance tests that pertain to software.
+							</q>
+					   </p>
+					   
+					   <br />
+					   <p class="text-right-align"><a href="http://gojko.net/">Gojko Adzic</a></p>
+					   <br />
                     </section>
                     
                   <section data-state="blackout">
                     <h3>...comprehensive definition</h3>
                         <br />
                         <q cite>
-                         <p>BDD is a second-generation, outside–in, pull-based, multiple-stakeholder, multiple-scale, high-automation, agile methodology.</p>
-                         <p>The result?</p>
-                         <p class="text-center-align">Tested software, that works!</p>
-                        </q>
-                  </section>
+                        <p>BDD is a second-generation, outside–in, pull-based, multiple-stakeholder, multiple-scale, high-automation, agile methodology.</p>
+						</q>
+						<br />
+						<p class="fragment">Hmm... can you repeat that?!</p>
+				 </section>
+				 
                   
                   <section data-state="blackout">
                     <h3>...comparing with TDD</h3>
@@ -95,6 +114,7 @@
                             <li>an evolution in thinking behind TDD</li>
                             <br />
                             <li>it builds upon TDD by formalising the good habits of the best TDD practitioners:</li>
+							<br />
                                 <ul>
                                     <li>working outside-in</li>
                                     <li>examples for requirements</li>
@@ -124,115 +144,90 @@
              <section>
                 <section data-state="blackout">
                     <h3>In the beginning...</h3>
-                    <p class="fragment"><strong>The product management team...</strong></p>
-                    <img class="center-align fragment" width="200" src="images/managers.png">
-                    <p class="fragment"><strong>...has an idea</strong></p>
-                    <img class="noborder fragment" width="200" src="images/idea.png">
+					<p class="fragment"><strong>The product management team...</strong><br /><img class="center-align" width="200" src="images/managers.png" alt=""/></p>
+					<p class="fragment"><strong>...has an idea</strong><br /><img class="noborder" width="200" src="images/idea.png" alt=""/></p>
                 </section>
                  
                  <section data-state="blackout">
                     <h3>Next</h3>
-                    <p class="fragment"><strong>The same idea...</strong></p>
-                    <img class="center-align fragment" width="200" src="images/idea.png">
-                    <br />
-                    <img class="center-align fragment" width="200" src="images/arrow.png">
-                    <p class="fragment text-colored"><strong>BACKLOG</strong></p>
-                    <br />
-                    <p class="fragment"><strong>goes to backlog...</strong></p>
+                    <p class="fragment"><strong>The same idea...</strong><br /><img class="center-align" width="200" src="images/idea.png" alt="" /></p>
+					<br />
+                    <img class="center-align fragment" width="200" src="images/arrow.png" alt=""><p class="fragment text-colored"><strong>BACKLOG</strong></p>
+	
                 </section>
                  
                  <section data-state="blackout"> 
                     <h3>The team gathers around</h3>
-                    <p class="fragment"><strong>Product Management</strong></p> 
-                    <img class="noborder fragment" width="200" src="images/managers.png">
-                    <p class="fragment"><strong>Business Analyst</strong></p> 
-                    <img class="noborder fragment" width="200" src="images/ba1.png">
-                 </section>
+                    <p class="fragment"><strong>Product Management</strong><br /><img class="noborder" width="200" src="images/managers.png" alt="" /></p> 
+					<br />
+                    <p class="fragment"><strong>Business Analyst</strong><br /><img class="noborder" width="200" src="images/ba1.png" alt="" /></p> 
+                </section>
                  
                  <section data-state="blackout">
                     <h3>Business Analysts???</h3>
-                    <p class="fragment text-left-align"><strong>Tech Leads</strong></p>
-                    <img class="left-align fragment" width="200" src="images/tech_leads.png">
-                    <p class="fragment text-right-align"><strong>developers</strong></p>
-                    <img class="right-align fragment" width="200" src="images/engineers.png">
-                    <p class="fragment text-center-align"><strong>...and testers</strong></p>
-                    <img class="noborder fragment" width="200" src="images/testers.png">
+                    <p class="fragment text-left-align"><strong>Tech Leads</strong><br /><img class="left-align" width="200" src="images/tech_leads.png" alt="" /></p>
+                    <p class="fragment text-right-align"><strong>developers</strong><br /><img class="right-align" width="200" src="images/engineers.png" alt="" /></p>
+                    <p class="fragment text-center-align"><strong>...and testers</strong><br /><img class="noborder" width="200" src="images/testers.png" alt="" /></p>
                  </section>
                  
                  <section data-state="alert">
                     <h3>The team takes the the idea...</h3>
                     <p class="fragment"><strong>Various discussions emerge...</strong></p>
-                    <br />
-                    <p class="fragment"><strong>...and finally, a story appears</strong></p>
-                    <img class="noborder fragment" width="150" src="images/user_story.png">
-                    <p class="fragment"><strong>But the most important gain...Shared understanding!</strong></p>
-                    <img class="noborder fragment" width="400" src="images/shared.png">
-                </section>
+                    <p class="fragment"><strong>...and finally, a story appears</strong><br /><img class="noborder" width="150" src="images/user_story.png" alt="" /></p>
+                    <p class="fragment">But the most important gain</p>
+					<p class="fragment"><strong>...Shared understanding!</strong><br /><img class="noborder" width="400" src="images/shared.png" alt="" /></p>
+                 </section>
               </section>
                     
-             <section>
-				<section data-state="blackout">
-					<h3>Now let's have some fun</h3>
+				<section>
+					<h3>Where does UX/design come in play?</h3>
 					<br />
-					<p class="fragment">The UX guy...</p>
-					<img class="noborder fragment" width="200" src="images/UX.png">
-					<p class="fragment">...is able to define the wireframes</p>
-					<img class="noborder fragment" width="400" src="images/web_wireframe.gif">
+					<p class="fragment">The UX and designer teams, <br />having all the info they need...<br /><img class="noborder" width="200" src="images/designers.png" alt="" /></p>
+					<p class="fragment">...are able to define the visuals.<br /><img class="noborder" width="350" src="images/web_wireframe.gif"></p>
+				</section>
+					
+		    <section>
+				<section data-state="blackout">
+					<h3>Having the story clearly defined...</h3>
+					<p class="fragment">...with a set of predefined examples (which will be refined)</p>
+					<p class="fragment"><i>Tech leads are defining the architecture...</i><br /><img class="noborder" width="200" src="images/architecture.png"></p>
+					<p class="fragment"><i>...and testers&amp;developers are automating.</i>
+					<br />
+					<br />
+						<span class="text-left-align spring-green">Given the ninja has a <strong>third</strong> level blackbelt</span>
+						<br />
+						<span class="text-left-align maroon">When hit on the head by a samurai with a katana</span>
+						<br />
+						<span class="text-left-align maroon">Then the ninja's brain should not be hurt</span></p>
+				
 				</section>
 				
 				<section data-state="blackout">
-					<h3>And the fun continues</h3>
-					<p class="fragment">Now it's the designers' turn to do their magic</p>
-					<br />
-					<img class="noborder fragment" width="200" src="images/designers.png">
-					
-				</section>
-								
-			<section data-state="alert">
-				<h3>But there's a lot more to BDD</h3>
-				<p>Testers are working together with the developers to get the story/feature implemented</p>
-				<br />
-				<img class="noborder fragment" width="300" src="images/product.png">
-			</section>		
-			
-		</section>
-		
-		    <section>
-				<section data-state="blackout">
-					<h3>How does this work?</h3>
-					<p class="fragment">While developers are defining the architecture...</p>
-					<img class="noborder fragment" width="200" src="images/architecture.png">
-					<p class="fragment">...testers are working hard to automate what's being implemented.</p>
-					<img class="noborder fragment" width="200" src="images/automation.png">
+					<h3>The results?</h3>
+					 <ul>
+						<li class="fragment">Implementing changes more efficiently</li>
+						<li class="fragment">Higher product quality</li>
+						<li class="fragment">Less rework</li>
+						<li class="fragment">Better work aligment</li>
+						<li class="fragment"><i>Living documentation</i></li>
+     				</ul>
 				</section>
 				
 				<section data-state="alert">
-					<h3>The result?</h3>
-					<br />
-					<p class="fragment"><strong><i>Tested software, that works!</i></strong>
-				</section>		
-			</section>
-				
-				
-				<section>
 					<h3>Could it be that easy?</h3>
 					<br />
-					
 					<p class="fragment"><strong>Yes, when the software product has emerged from a shared collaboration</strong></p>
-					<img class="noborder fragment" width="300" src="images/software.png">
+					<br />
+					<img class="noborder fragment" width="300" src="images/software.png" alt="" />
 				</section>
-					
-						
-             </section>
-					
+			</section>
 
 			
 			<section>
 				<section data-state="blackout">
 					<h3>How about a practical example?</h3>
 					<br />
-					<pre><code>As a PBS user, I want to be able to localize to any station, so that I can see its tv schedule.
-					</code></pre>
+				
 				</section>
 			
 				<section data-state="blackout">
