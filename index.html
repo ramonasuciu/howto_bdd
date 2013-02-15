@@ -152,7 +152,7 @@
                  <section data-state="blackout">
                     <h3>Next</h3>
                     <p class="fragment"><strong>The same idea...</strong><br /><img class="center-align" width="200" src="images/idea.png" alt="" /></p>
-					<img class="center-align fragment" width="200" src="images/arrow.png" alt=""><br /><br /><p class="fragment text-colored"><strong>BACKLOG</strong></p>
+					<p class="fragment text-colored"><img class="center-align" width="200" src="images/arrow.png" alt=""><br /><br /><strong>BACKLOG</strong></p>
 	
                 </section>
                  
@@ -183,7 +183,7 @@
 					<h3>Where does UX/design come in play?</h3>
 					<br />
 					<p class="fragment">The UX and designer teams, <br />having all the info they need...<br /><img class="noborder" width="200" src="images/designers.png" alt="" /></p>
-					<p class="fragment">...are able to define the visuals.<br /><img class="noborder" width="350" src="images/web_wireframe.gif"></p>
+					<p class="fragment">...are able to define the visuals.<br /><img class="noborder" width="350" src="images/web_wireframe.gif" alt="" /></p>
 				</section>
 					
 		    <section>
@@ -191,7 +191,7 @@
 					<h3>Having the story clearly defined...</h3>
 					<p class="fragment">...with a set of predefined examples (which will be refined)</p>
 					<br />
-					<p class="fragment"><i>Tech leads are defining the architecture...</i><br /><img class="noborder" width="200" src="images/architecture.png"></p>
+					<p class="fragment"><i>Tech leads are defining the architecture...</i><br /><img class="noborder" width="200" src="images/architecture.png" alt="" /></p>
 					<p class="fragment"><i>...and testers&amp;developers are automating.</i>
 					<br />
 					<br />
@@ -237,11 +237,70 @@
 					<a href="http://lettuce.it/">Lettuce</a>
 					<br />
 					<br />
-					<q cite>To use a BDD tool <strong><i>right</i></strong>, one has to understand that the main goal is primarly about communication and secondarly about testing!</q>
+					<q cite>To use a BDD tool right, one has to understand that the main goal is primarly about communication and secondarly about testing!</q>
 				</section>
 				
+				
+				<section data-state="blackout">
+					<h3>PBS User Story</h3>
+					<br />
+					<p><i>
+						As a <span class="dark-blue">User</span><br />
+						<span class="spring-green">I want to</span> localize to a station<br />
+						<span class="maroon">So that</span> I am able to view the station's TV Schedule
+					</i></p>
+					
+				</section>
+				
+				<section data-state="blackout">
+					<h3>Let's see how we test this</h3>
+					<p class="fragment">Developers and testers write the <strong>feature file</strong>.</p>
+					<br />
+					<p class="fragment spring-green text-left-align">Feature: TV Schedules is available after localization</p>
+					<p class="fragment spring-green text-left-align">Scenario:	Once localized, user is able to see TV Schedule for that station</p>
+					<br />
+					<p class="fragment text-left-align"><i>Given I am on the localization page<br />
+																							When I localize to a station<br />
+																							Then I am able to see TV schedule for that station</i></p>
+				</section>
+				
+				<section data-state="alert">
+					<h3>Main Advantage...Living Documentation</h3>
+					<br />
+					<p class="fragment"><i>Long Term Value comes from Living Documentation!</i></p>
+					<br />
+					<ul>
+						<li class="fragment">Living Documentation should be easy to understand</li>
+						<li class="fragment">Living Documentation should be consistent</li>
+						<li class="fragment">Living Documentation should be organized for easy access</li>
+					</ul>
+			
+				</section>
+								
 			</section>
-
+			
+		<section>
+			<h3>Do we need BDD?</h3>
+			<br />
+			<p class="fragment">Let's decide this together. But keep in mind:</p>
+			<br />
+			<ul>
+				<li class="fragment">No Living Documentation system in place</li>
+				<li class="fragment">No effective way of keeping tests cases up to date</li>
+				<li class="fragment">Shared understanding</li>
+				<li class="fragment">Why do we need this new feature/technical solution?</li>
+				<li class="fragment">Gap between the differing views of computer systems held by Business users and Technologists</li>
+				<li class="fragment">Automation code - as important as the application's code</li>
+				<li class="fragment">Ubiquitos Language</li>
+				<li class="fragment">We need to focus on what matters</li>
+			</ul>
+		</section>
+		
+		
+		<section>
+		<br />
+		<p>Something witty to say!</p>
+		</section>
 			</div>
 
 		</div>
